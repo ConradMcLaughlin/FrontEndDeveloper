@@ -1,0 +1,2 @@
+* Div is rectangular container, Span is inline container
+* Some tags have semantic meaning - i.e. header/footer
