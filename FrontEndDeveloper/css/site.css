@@ -1,0 +1,128 @@
+﻿      
+        header, footer {
+            background-color:lightgray;
+            border: solid 1px black;
+            /*font-family: 'Times New Roman', serif;*/
+        }
+
+      footer{
+          padding: 10px;
+          border-radius: 3px;
+      }
+
+      body{
+          font-family: SegoeUI, Arial, Helvetica, sans-serif;
+          font-size: 14px;
+          background-color: green;
+      }
+      
+      /*Colour the anchor tags (Home, Contact, About etc.)*/
+      a {
+         color:green;
+      }
+
+      html, body {
+          padding: 0;
+          margin: 0;
+      }
+
+      /*Selector based on the class*/
+      .bordered-image{
+          border: solid 1px #444;
+          border-radius: 2px;
+      }
+      
+
+      /*# used for id*/
+      #main{
+          border: solid 1px ##808080;
+          border-radius: 5px;
+          color:##444;
+          
+          /*Clockwise around the circle: Top,Right,Bottom,Left */
+          /* margin: 20px 0 20px 0px; */
+
+          /*Top and bottom 20px, Left & right 0*/
+          margin: 20px 0;  
+          padding: 5px;
+      }
+
+      
+      /*Selector - any label under id = 'main'*/
+      /* #main label{font-weight: bold;} */
+
+      #results{
+          padding: 2px;
+          width: 600px;
+          display: inline-block;
+          vertical-align: top;
+      }
+
+      .simple-form{
+          padding: 2px;
+          width: 300px;
+          /* Absolute positioning - rarely used
+             ==================================
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          */
+          display: inline-block;
+          vertical-align: top;
+      }
+
+      .simple-form input[type=text],
+      .simple-form select,
+      .simple-form input[type=password],
+      .simple-form textarea {
+          width:150px;
+      }
+
+      .simple-form input[type=submit]{
+          background-color:green;
+          color: white;
+          border-radius: 15px;
+          padding: 3px;
+          margin-top: 5px;
+      }
+      
+      .container{
+          width: 989px;
+          margin: 0 auto;
+          background-color: white;
+          padding: 5px;
+      }
+      
+      header nav {
+          float: right;
+          margin-right: 5px;
+      }
+
+      header nav li{
+          display: inline;
+          font-size: 12px;
+      }
+
+      
+      /* Below added for the result list appending */  
+      .result {
+          margin:5px;
+          border:1px solid #888;
+      }
+
+      .result .title {
+          font-weight: bold;
+      }
+
+
+      /***************************************/
+
+      /*Resize images*/
+     .resized-image
+     {
+         width: 50px;
+         height: 50px;
+     }
+
+
+

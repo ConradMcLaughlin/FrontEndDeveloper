@@ -1,0 +1,115 @@
+﻿<!--
+Built for the Pluralsight course  
+    jQuery Fundamentals - Dan  Wahlin
+
+    * $ is the same as writing jQuery
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <!-- Use Content Delivery Network-->
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-3.1.1.js"></script>
+    <!-- If problem with the CDN then load script locally -->
+    <script>window.jQuery || document.write('<script src="Scripts/jquery-3.1.1.js"><\/script>')</script>
+
+    <!--Script example-->
+    <script type="text/javascript">
+        window.onload = function () {
+            alert('Window loaded');
+        };
+
+        $(document).ready(function () {
+            alert('DOM loaded');
+            $('#myContent').html('Hello World');
+        });
+    </script>
+    <script type="text/javascript" src="js/about.js"></script>
+
+    <link rel="stylesheet" href="css/site.css" />
+	<meta charset="utf-8" />
+    
+    <!--<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link rel="stylesheet" href="css/SoloLearn.css" />-->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <!--Will be displayed as clickable links-->
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/MyBlog.html">My Blog</a></li>
+                </ul>
+            </nav>
+
+            <!--Example of alternative text if image cannot be loaded-->
+            <div><img src="img\logoa.png" class="bordered-image" alt="Image cannot be found" /></div>
+
+            <!--Use CSS to resize image-->
+            <div><img src="img\logo.png" class="resized-image" alt="Resized image" /></div>
+
+            <div><p>This is a site to <em>search</em> <a href="http://www.Github.com">Github</a> for interesting projects</p></div>
+        </header>
+
+        <div id="myContent">
+            My jQuery enabled page!
+        </div>
+
+        <div id="TestDiv">This is my Div Test</div>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+
+        <section id="main"></section>
+
+        <div class="section">
+            Table span test
+            <table border="2">
+                <tr>
+                    <td>Red</td>
+                    <td>Blue</td>
+                    <td>Green</td>
+                </tr>
+                <tr>
+                    <td>Yellow</td>
+                    <td colspan="2">Orange</td>
+                </tr>
+            </table>
+        </div>
+
+        <section id="main"></section>
+        
+        <!--The <div> element defines a block-level section in a document.
+        The <span> element defines an inline section in a document.-->
+        <div class="section">
+            Inline and Block Elements
+            <div style="background-color:maroon; color:white; padding:20px;">
+                <p>Some paragraph text goes here.</p>
+                <p>Another paragraph goes here.</p>
+                <p>this is <span style="color:yellow">yellow</span></p>
+            </div>
+        </div>
+
+        <section id="main"></section>
+                
+        <div style="background-color:lightblue; padding:20px; align:center;">
+            <!--Input type of password-->
+            <form>
+                <label>Username</label>
+                <input type="text" name="username" /><br />
+                <label>Password</label>
+                <input type="password" name="password" />
+                <input type="submit" name="submit" value="Send" />
+            </form>
+        </div>
+
+        <footer>
+            <!-- Below is an escape character (also can have &gt; &lt;) Can also use unicode such as &#x160-->
+            &copy; 2017 Conrad McLaughlin LLC
+        </footer>
+</body>
+</html>

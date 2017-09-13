@@ -1,27 +1,63 @@
-﻿<!DOCTYPE html>
+﻿<!--
+Built for the Pluralsight course    
+-->
+<!DOCTYPE html>
 <html>
 <head>
     <title>Github Hub</title>
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/site.css"/>
 	<meta charset="utf-8" />
 </head>
 <body>
-    <header>
-        <h1><img src="img\logo.png" /></h1>
-        <p>This is a site to <em>search</em> <a href="http://www.Github.com" >Github</a> for interesting projects</p>
-    <nav>
-        <!--Will be displayed as clickable links-->
-        <a href="/index.html">Home</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/about.html">About</a>
-    </nav>
-    </header>
-    <section>
-        <p>Another long <span>and very good</span> <strong>paragraph</strong> for you to see. Hello</p>
-    </section>
-    <footer>
-        <!-- Below is an escape character (also can have &gt; &lt;)
-            Can also use unicode such as &#x160-->
-       &copy; 2017 Conrad McLaughlin LLC 
-    </footer>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <!--Will be displayed as clickable links-->
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/MyBlog.html">My Blog</a></li>
+                </ul>
+            </nav>
+            <div><img src="img\logo.png" class="bordered-image" /></div>
+            <div><p>This is a site to <em>search</em> <a href="http://www.Github.com">Github</a> for interesting projects</p></div>
+        </header>
+        <section id="main">
+            <p>Another long <span>and very good</span> <strong>paragraph</strong> for you to see. Hello</p>
+            <form action="http://wilder.azurewebsites.net/echo" method="post" class="bordered-image simple-form">
+                <label type="text" for="searchPhrase" id="searchPhrase">Search Phrase</label>
+                <input name="searchPhrase" /><br />
+                <input type="checkbox" name="useStars" checked="checked" />
+                <label for="useStars" id="useStars">Use Stars?</label><br />
+                <label for="langChoice" id="langChoice">Language:</label>
+                <select name="langChoice">
+                    <option>All</option>
+                    <option>JavaScript</option>
+                    <option selected>C#</option>
+                    <option>Java</option>
+                    <option>Ruby</option>
+                </select>
+                <br />
+                <input type="submit" value="search" />
+                <!--Takes the content and sends it to the action-->
+            </form>
+            <div id="results" class="bordered-image">
+                <button id="toggleButton">Hide</button>
+                <div id="resultsList">This is where results live</div>
+            </div>
+        </section>
+        <footer>
+            <!-- Below is an escape character (also can have &gt; &lt;)
+                Can also use unicode such as &#x160-->
+            &copy; 2017 Conrad McLaughlin LLC
+        </footer>
+    </div>
+    <script type="text/javascript" src="Scripts/jquery-3.1.1.js"></script>
+       
+    <!--Script block at the bottom, so that everything on the page has been loaded.-->
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

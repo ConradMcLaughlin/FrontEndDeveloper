@@ -1,2 +1,36 @@
 * Div is rectangular container, Span is inline container
 * Some tags have semantic meaning - i.e. header/footer
+* ol = ordered list, ul = unordered list
+* You can specify the method i.e. POST, on the method
+* <!--[if lt IE 9]> means if LESS THAN internet explorer 9
+* form elements are used to accept input
+
+STYLING
+-------
+*style changes look and feel
+*A rule declared later will win
+
+
+Javascript
+-----------
+* Prototypical inheritance instead of class-based
+* Dynamic
+* Script block at the bottom, so that everything on the page has been loaded.
+
+e.g
+    <script type="text/javascript">
+        //Script block at the bottom, so that everything on the page has been loaded.
+        
+        var msg = "hello javascript"
+        //alert(msg);
+        console.log(msg); //Write to the console
+
+        var resultsDiv = document.getElementById("results");
+        resultsDiv.innerHTML = "<p>This is from JavaScript</p>";
+
+    </script>
+
+* variables do not need to be defined. Not good as you could create new variables by accident
+ - therefore use the "use strict" declaration
+
+ 
