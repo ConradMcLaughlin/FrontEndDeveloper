@@ -107,6 +107,29 @@ Built for the Pluralsight course
             </form>
         </div>
 
+        
+        <article>
+            <!--Multiple <source> elements can be linked to different audio files. 
+                The browser will use the first recognized format.-->
+
+            <!--controls
+            Specifies that audio controls should be displayed (such as a play/pause button, etc.)
+
+            autoplay
+            When this attribute is defined, audio starts playing as soon as it is ready, without asking for the visitor's permission.
+            
+            loop
+            This attribute is used to have the audio replay every time it is finished.-->
+            
+            <audio controls loop autoplay>
+                <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
+                <source src="http://www.sololearn.com/uploads/audio.ogg" type="audio/ogg">
+                Audio element not supported by your browser
+            </audio>
+            
+        </article>
+
+
         <footer>
             <!-- Below is an escape character (also can have &gt; &lt;) Can also use unicode such as &#x160-->
             &copy; 2017 Conrad McLaughlin LLC
