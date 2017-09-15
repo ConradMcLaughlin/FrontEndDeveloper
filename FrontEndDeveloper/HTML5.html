@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5</title>
+	<meta charset="utf-8" />
+
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-3.1.1.js"></script>
+    <!--<link rel="stylesheet" href="css/site.css" />-->
+    <script type="text/javascript" src="js/HTML5.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link rel="stylesheet" href="css/SoloLearn.css" />
+
+</head>
+<body>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <!--Will now be displayed as clickable links-->
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/MyBlog.html">My Blog</a></li>
+                        <li><a href="/HTML5.html">HTML5</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+        <article class="section">
+            <!--Multiple <source> elements can be linked to different audio files.
+                The browser will use the first recognized format.-->
+            <!--controls
+            Specifies that audio controls should be displayed (such as a play/pause button, etc.)
+
+            autoplay
+            When this attribute is defined, audio starts playing as soon as it is ready, without asking for the visitor's permission.
+
+            loop
+            This attribute is used to have the audio replay every time it is finished.-->
+
+            <audio controls>
+                <!-- loop autoplay>-->
+                <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
+                <source src="http://www.sololearn.com/uploads/audio.ogg" type="audio/ogg">
+                Audio element not supported by your browser
+            </audio>
+        </article>
+
+        <article class="section">
+            <video controls>
+                <source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4" />
+                <source src="http://www.sololearn.com/uploads/video.mp4" type="video/ogg" />
+                Video not supported by your browser
+            </video>
+        </article>
+
+        <!--<article class="section">
+            By removing the value attribute, you will get an animation (not in FireFox however)
+            Status: <progress min="0" max="100"></progress>
+        </article>-->
+
+     
+        <article class="section">
+            <p>Click the button to get your coordinates.</p>
+
+            <button onclick="getLocation()">Try It</button>
+
+            <p id="demo"></p>
+
+            <script>
+                var x = document.getElementById("demo");
+
+                function getLocation() {
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    } else {
+                        x.innerHTML = "Geolocation is not supported by this browser.";
+                    }
+                }
+
+                function showPosition(position) {
+                    x.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+                }
+            </script>
+            
+        </article>
+
+
+
+    </div>
+</body>
+</html>
