@@ -83,10 +83,32 @@
                     "<br>Longitude: " + position.coords.longitude;
                 }
             </script>
-            
         </article>
 
+        <article class="section">
+            <!--Simple drag and drop example-->
+            
+            
+            <script>
+                function allowDrop(ev) {
+                    ev.preventDefault();
+                }
 
+                function drag(ev) {
+                    ev.dataTransfer.setData("text", ev.target.id);
+                }
+
+                function drop(ev) {
+                    ev.preventDefault();
+                    var data = ev.dataTransfer.getData("text");
+                    ev.target.appendChild(document.getElementById(data));
+                }
+            </script>
+
+            <div id="box" style="border:1px solid black; width:200px; height:200px" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <img id="image" src="img/logo.png" draggable="true" width="150" height="50" alt="Image not found" ondragstart="drag(event)"/>
+
+        </article>
 
     </div>
 </body>
