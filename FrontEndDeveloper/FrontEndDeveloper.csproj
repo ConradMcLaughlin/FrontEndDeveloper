@@ -70,6 +70,7 @@
     <Content Include="About.html" />
     <Content Include="css\SoloLearn.css" />
     <Content Include="HTML5.html" />
+    <Content Include="img\target.png" />
     <Content Include="js\About.js" />
     <Content Include="js\HTML5.js" />
     <Content Include="js\index.js" />
