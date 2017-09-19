@@ -26,7 +26,7 @@
                 </nav>
             </header>
 
-        <article class="section">
+        <article class="section">Audio<br/>
             <!--Multiple <source> elements can be linked to different audio files.
                 The browser will use the first recognized format.-->
             <!--controls
@@ -46,7 +46,7 @@
             </audio>
         </article>
 
-        <article class="section">
+        <article class="section">Video<br/>
             <video controls>
                 <source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4" />
                 <source src="http://www.sololearn.com/uploads/video.mp4" type="video/ogg" />
@@ -60,7 +60,7 @@
         </article>-->
 
      
-        <article class="section">
+        <article class="section">GeoLocation<br/><br/>
             <p>Click the button to get your coordinates.</p>
 
             <button onclick="getLocation()">Try It</button>
@@ -85,10 +85,9 @@
             </script>
         </article>
 
-        <article class="section">
+        <article class="section"> Drag And Drop API<br/>
             <!--Simple drag and drop example-->
-            
-            
+                        
             <script>
                 function allowDrop(ev) {
                     ev.preventDefault();
@@ -107,7 +106,25 @@
 
             <div id="box" style="border:1px solid black; width:200px; height:200px" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             <img id="image" src="img/logo.png" draggable="true" width="150" height="50" alt="Image not found" ondragstart="drag(event)"/>
+        </article>
 
+        <article class="section">SVG<br/>
+            <svg width="300" height="300">
+                <!--- cx pushes the center of the circle further to the right of the screen
+                    - cy pushes the center of the circle further down from the top of the screen
+                    - r defines the radius
+                    - fill determines the color of our circle
+                    - stroke adds an outline to the circle-->
+                <circle cx="80" cy="80" r="50" fill="green"/>
+                <circle cx="200" cy="80" r="50" fill="none" stroke="black"/>
+            </svg>
+            <svg width="320" height="120">
+                <rect width="300" height="100" x="20" y="20" fill="green"/>
+            </svg>
+            <svg width="400" height="410">
+                <!--(x1, y1) define the start coordinates(x2, y2) define the end coordinates.-->
+                <line x1="10" y1="10" x2="200" y2="100" style="stroke:#000000; stroke-linecap:round; stroke-width:20"/>
+            </svg>
         </article>
 
     </div>
