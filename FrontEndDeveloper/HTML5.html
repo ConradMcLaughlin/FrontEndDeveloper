@@ -141,6 +141,19 @@
             </svg>
         </article>
 
+        <article>SVG Animation<br/>
+        <!--SVG animations can be created using the <animate> element. -->
+            <svg width="400" height="400">
+                <rect width="150" height="150" fill="orange">
+                    <!--This example below creates a rectangle that will change its position in 3 seconds and will then repeat the animation twice (on button click):-->
+                    <animate attributeName="x" from="0" to="300" dur="3s" fill="freeze" repeatCount="2" begin="click"/>
+                    <!--This will change the colour-->
+                    <animate attributeName="fill" from="orange" to="green" dur="3s" fill="freeze" repeatCount="2" begin="click" />
+                    <!--Note: Instead of using from and to can also use values, for example: attributeName="x" values="0; 300; 0"-->
+                </rect>
+            </svg>
+        </article>
+
     </div>
 </body>
 </html>
