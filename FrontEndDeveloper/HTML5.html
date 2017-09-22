@@ -182,6 +182,31 @@
             </form>
         </article>
 
+        <br/><br/>
+        <article>
+            <br/>Search Box<br/>
+            <input id="mysearch" name="searchitem" type="search" placeholder="Search here"/>
+            
+            <br/>Data List example<br/>
+            <!--id of the datalist must match the list attribute of the search box-->
+            <input id="car" type="text" list="colours"/>
+            <datalist id="colours">
+                <option value="Red"/>
+                <option value="Green"/>
+                <option value="Yellow"/>
+            </datalist>
+            
+            <br/>Different input fields - Mobile device will render corresponding keyboard matching the field's type!<br/>
+            <!--These are especially useful when opening a page on a modern mobile device, 
+            which recognizes the input types and opens a corresponding keyboard matching the field's type.-->
+            <input name="email" type="text" placeholder="example@example.com" required />
+            <br />
+            <input name="url" type="url" placeholder="example.com" required />
+            <br />
+            <input name="tel" type="tel" placeholder="555.555.1211" required />
+            <br />
+        </article>
+
     </div>
 </body>
 </html>
