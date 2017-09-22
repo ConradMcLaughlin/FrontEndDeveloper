@@ -141,7 +141,7 @@
             </svg>
         </article>
 
-        <article>SVG Animation<br/>
+        <article>SVG Animation - Click The Box!<br/>
         <!--SVG animations can be created using the <animate> element. -->
             <svg width="400" height="400">
                 <rect width="150" height="150" fill="orange">
@@ -152,6 +152,34 @@
                     <!--Note: Instead of using from and to can also use values, for example: attributeName="x" values="0; 300; 0"-->
                 </rect>
             </svg>
+        </article>
+
+        <article>Canvas<br/>
+            <!--Container ONLY for graphics. You MUST use script to draw the graphics-->
+            <canvas id="canvas1" width="400" height="300"></canvas>
+            <script>
+                var can = document.getElementById("canvas1");
+                //getContext() returns a drawing context on the canvas.
+                var ctx = can.getContext("2d");
+                //Set a fill style and draw a rectangle
+                ctx.fillStyle = "rgba(0,200,0,1)";
+                ctx.fillRect(20, 20, 100, 100);
+
+                //Transformations-> Text - Could not get this to work!
+                //ctx.font = "bold 22px Tahoma";
+                //ctx.textAlign = "start";
+                //ctx.fillText = ("start", 10, 20);
+            </script>
+        </article>
+
+        <article> HTML5 Form<br/>
+            <form autocomplete="off">
+                <!--In HTML 5 you can use additional attributes such as required, autofocus and autocomplete-->
+                <input name="name" type="text" placeholder="Name:" required /><br />
+                <input name="email" type="text" placeholder="Email:" required/><br />
+                <textarea name="message" placeholder="Text:" required></textarea>
+                <input type="submit" value="SEND" class="submit" />
+            </form>
         </article>
 
     </div>
