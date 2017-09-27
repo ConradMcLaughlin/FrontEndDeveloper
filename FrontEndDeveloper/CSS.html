@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS</title>
+    <meta charset="utf-8" />
+    <!--<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-3.1.1.js"></script>-->
+    
+    <!--* Embedded/Internal styles are defined within the <style> element, inside the head section of an HTML page-->
+    <style>
+        p{color:white;
+          background-color:darkcyan;
+        }
+        /*You can define unique html tag here too*/
+        test{color: white;
+             background-color:darkred
+        }
+    </style>
+
+    <!--* External css-->
+    <link rel="stylesheet" href="css/Example.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!--Will now be displayed as clickable links-->
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/MyBlog.html">My Blog</a></li>
+                <li><a href="/HTML5.html">HTML5</a></li>
+                <li><a href="/CSS.html">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>CSS Examples</h1>
+
+
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+    <test>Using a test tag</test>
+
+    <!--* Inline css is used within an html document. you don't need to create a separate css file for it.-->
+    <p style="color:white; background-color:gray;">
+        This is an example of inline styling
+    </p>
+    
+</body>
+</html>

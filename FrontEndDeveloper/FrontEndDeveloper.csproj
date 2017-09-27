@@ -66,6 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS.html" />
+    <Content Include="css\Example.css" />
     <Content Include="css\site.css" />
     <Content Include="About.html" />
     <Content Include="css\SoloLearn.css" />
