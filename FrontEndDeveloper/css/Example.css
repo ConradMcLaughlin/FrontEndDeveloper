@@ -19,3 +19,18 @@
     color:hotpink;
     background-color:white;
 }
+
+.FontSize{
+    font-size:1.25em;
+}
+
+fw.LightWeight{
+    font-weight:lighter;
+    font-variant:normal
+}
+
+fw.HeavyWeight{
+    font-weight:bolder;
+    font-variant:small-caps
+}
+
